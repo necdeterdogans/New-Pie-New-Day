@@ -18,6 +18,8 @@ Eğer bu projeye katkıda bulunmak isterseniz, aşağıdaki alanlarda destek sa�
 
 Bu projeye katkıda bulunmak veya herhangi bir soru sormak için benimle iletişime geçebilirsiniz. Hep birlikte harika bir masal sitesi oluşturalım!
 
+Kişisel Mail Adresim : necdeterdogans@hotmail.com
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Fairy Tale Website Development
@@ -36,3 +38,5 @@ If you would like to contribute to this project, you can help in the following a
 ## Contact
 
 Feel free to reach out if you would like to contribute to this project or have any questions. Let’s create an amazing fairy tale website together!
+
+My Personal Mail : necdeterdogans@hotmail.com
