@@ -4,57 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sınav Arayüzü</title>
+    <style>
+        /* Sayfanın arka plan rengi */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff; /* Açık mavi arka plan rengi */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Form stil ayarları */
+        form {
+            background-color: #ffffff; /* Beyaz form arka planı */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+            width: 300px;
+            text-align: center;
+        }
+
+        /* Giriş alanları ve buton */
+        input, button, label {
+            margin: 10px 0;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50; /* Buton rengi (yeşil) */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Test Sınavı</h1>
     <form action="/submit" method="post">
-        <!-- Text Input -->
+        <h1>Test Sınavı</h1>
         <label for="name">Adınız:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" required><br>
         
-        <!-- Email Input -->
         <label for="email">E-posta:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required><br>
         
-        <!-- Number Input -->
         <label for="age">Yaşınız:</label>
-        <input type="number" id="age" name="age" min="18" max="100"><br><br>
+        <input type="number" id="age" name="age" min="18" max="100"><br>
         
-        <!-- Radio Buttons -->
-        <label>Cinsiyet:</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Erkek</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Kadın</label><br><br>
-        
-        <!-- Checkbox -->
-        <label>Dersler:</label><br>
-        <input type="checkbox" id="html" name="subject" value="HTML">
-        <label for="html">HTML</label><br>
-        <input type="checkbox" id="css" name="subject" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="checkbox" id="javascript" name="subject" value="JavaScript">
-        <label for="javascript">JavaScript</label><br><br>
-        
-        <!-- Date Input -->
         <label for="dob">Doğum Tarihi:</label>
-        <input type="date" id="dob" name="dob"><br><br>
+        <input type="date" id="dob" name="dob"><br>
         
-        <!-- Range Input -->
-        <label for="satisfaction">Bu sınavı ne kadar zor buldunuz?</label>
-        <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
-        
-        <!-- File Input -->
-        <label for="file">Dosya Yükleyin:</label>
-        <input type="file" id="file" name="file"><br><br>
-        
-        <!-- Color Input -->
-        <label for="color">Favori Renk:</label>
-        <input type="color" id="color" name="color"><br><br>
-        
-        <!-- Submit Button -->
         <button type="submit">Gönder</button>
     </form>
 </body>
 </html>
-
