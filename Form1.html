@@ -4,7 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Üyelik Formu</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f0f8ff; /* Arka plan rengi */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Tüm ekran yüksekliği */
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: white; /* Form arka plan rengi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Form genişliği */
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 100%; /* Input genişliği */
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%; /* Buton genişliği */
+            padding: 10px;
+            background-color: #007bff; /* Buton rengi */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Buton üzerine gelindiğinde renk değişimi */
+        }
+    </style>
 </head>
 <body>
     <div class="form-container">
@@ -12,19 +60,14 @@
         <form action="/submit" method="POST">
             <label for="name">Ad:</label>
             <input type="text" id="name" name="name" required>
-
             <label for="surname">Soyad:</label>
             <input type="text" id="surname" name="surname" required>
-
             <label for="email">E-posta:</label>
             <input type="email" id="email" name="email" required>
-
             <label for="password">Şifre:</label>
             <input type="password" id="password" name="password" required>
-
             <button type="submit">Üye Ol</button>
         </form>
     </div>
 </body>
 </html>
-
