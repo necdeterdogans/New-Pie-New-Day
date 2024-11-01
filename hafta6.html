@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridle yaptığım</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "A A A"
+                "B C D"
+                "E E F"
+                "G G G";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 150px 120px 110px;
+            grid-gap: 10px;
+            width: 600px;
+            max-width: 90vw;
+        }
+
+        .grid-container > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .grid-container > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .A {
+            grid-area: A;
+            background-color: #457b9d;
+        }
+
+        .B {
+            grid-area: B;
+            background-color: #e63946;
+        }
+
+        .C {
+            grid-area: C;
+            background-color: #1d3557;
+        }
+
+        .D {
+            grid-area: D;
+            background-color: #a8dadc;
+        }
+
+        .E {
+            grid-area: E;
+            background-color: #6dd3ce;
+        }
+
+        .F {
+            grid-area: F;
+            background-color: #ffb703;
+        }
+
+        .G {
+            grid-area: G;
+            background-color: #2F4F2F;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Gridle yaptığım</h2>
+        <div class="grid-container">
+            <div class="A">A</div>
+            <div class="B">B</div>
+            <div class="C">C</div>
+            <div class="D">D</div>
+            <div class="E">E</div>
+            <div class="F">F</div>
+            <div class="G">G</div>
+        </div>
+    </div>
+</body>
+
+</html>
