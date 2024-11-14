@@ -2,52 +2,24 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Ders Programı</title>
-</head>
-<body>
-    <table border="1" style="width: 100%; border-collapse: collapse;">
-        <tr style="background-color: #f2f2f2; text-align: center;">
-            <th style="padding: 10px;">Ders</th>
-            <th style="padding: 10px;">Saat</th>
-            <th style="padding: 10px;">Pazartesi</th>
-            <th style="padding: 10px;">Salı</th>
-            <th style="padding: 10px;">Çarşamba</th>
-            <th style="padding: 10px;">Perşembe</th>
-            <th style="padding: 10px;">Cuma</th>
-        </tr>
-        <tr>
-            <td style="text-align: center;">1</td>
-            <td style="text-align: center;">08:40-09:30</td>
-            <td style="text-align: center;">BTE307.01 Eğitimde Modelleme ve Tasarım<br>Dr. A. ÖZKÖK D1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td style="text-align: center;">2</td>
-            <td style="text-align: center;">09:40-10:30</td>
-            <td style="text-align: center;">BTE307.02 Eğitimde Modelleme ve Tasarım<br>Dr. A. ÖZKÖK D1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <!-- Diğer satırlar buraya eklenebilir -->
-    </table>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <title>Ders Programı</title>
+    <title>Ders Programı ve Venn Diagramı</title>
     <style>
+        /* Ortak stil ayarları */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Tablo stilleri */
         table {
-            width: 100%;
+            width: 80%;
             border-collapse: collapse;
+            margin-bottom: 40px; /* Tablolar ve diagram arasında boşluk */
         }
         th, td {
             border: 1px solid #000;
@@ -57,9 +29,41 @@
         th {
             background-color: #f2f2f2;
         }
+
+        /* Venn Diagramı stilleri */
+        .container {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            margin-top: 40px;
+        }
+        .circle {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+        .circle1 {
+            background-color: #ff6347; /* Turuncu */
+            top: 50px;
+            left: 70px;
+        }
+        .circle2 {
+            background-color: #8a2be2; /* Mor */
+            top: 50px;
+            left: 150px;
+        }
+        .circle3 {
+            background-color: #ffeb3b; /* Sarı */
+            top: 130px;
+            left: 110px;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Birinci Tablo -->
     <table>
         <tr>
             <th>Ders</th>
@@ -88,9 +92,45 @@
             <td></td>
             <td></td>
         </tr>
-        <!-- Diğer satırlar buraya eklenebilir -->
     </table>
+
+    <!-- İkinci Tablo -->
+    <table>
+        <tr>
+            <th>Ders</th>
+            <th>Saat</th>
+            <th>Pazartesi</th>
+            <th>Salı</th>
+            <th>Çarşamba</th>
+            <th>Perşembe</th>
+            <th>Cuma</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>08:40-09:30</td>
+            <td>BTE307.01 Eğitimde Modelleme ve Tasarım<br>Dr. A. ÖZKÖK D1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>09:40-10:30</td>
+            <td>BTE307.02 Eğitimde Modelleme ve Tasarım<br>Dr. A. ÖZKÖK D1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Venn Diagramı -->
+    <div class="container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+    </div>
+
 </body>
 </html>
-
-
