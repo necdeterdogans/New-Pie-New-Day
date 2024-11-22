@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Circles Grid</title>
+    <style>
+        /* Tam ekran beyaz arka plan */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: white; /* Arka plan beyaz */
+        }
 
+        /* Grid tasarımı */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(8, 40px); /* 8 sütun */
+            gap: 10px; /* Hücreler arasında boşluk */
+        }
+
+        /* Daireler */
+        .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Daire şekli */
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Renk geçişi */
+        .circle:nth-child(n) {
+            border-color: hsl(calc(200 + 120 * ((var(--i, 1) - 1) / 7)), 70%, 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <!-- Dairelerin döngü ile oluşturulması -->
+        <script>
+            const grid = document.querySelector('.grid');
+            for (let i = 0; i < 64; i++) { // 8x8 grid için 64 daire
+                const circle = document.createElement('div');
+                circle.className = 'circle';
+                circle.style.setProperty('--i', i % 8 + 1);
+                grid.appendChild(circle);
+            }
+        </script>
+    </div>
+</body>
+</html>
