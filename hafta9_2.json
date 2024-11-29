@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "JSON hangi durumlarda kullanılır?",
+      "options": [
+        "Çalıştırılabilir dosya oluşturmak",
+        "Veri paylaşımı yapmak",
+        "Veritabanı yönetmek",
+        "İşletim sistemi geliştirmek",
+        "Görsel düzenleme yapmak"
+      ],
+      "answer": "Veri paylaşımı yapmak"
+    },
+    {
+      "id": 2,
+      "question": "JSON nesnesi aşağıdakilerden hangisini içeremez?",
+      "options": [
+        "String",
+        "Number",
+        "Function",
+        "Boolean",
+        "Array"
+      ],
+      "answer": "Function"
+    },
+    {
+      "id": 3,
+      "question": "JSON dosyaları hangi formatta saklanır?",
+      "options": [
+        ".xml",
+        ".json",
+        ".html",
+        ".txt",
+        ".doc"
+      ],
+      "answer": ".json"
+    },
+    {
+      "id": 4,
+      "question": "Aşağıdakilerden hangisi geçerli bir JSON anahtarıdır?",
+      "options": [
+        "\"anahtar\"",
+        "123key",
+        "'anahtar'",
+        "anahtar123!",
+        "true"
+      ],
+      "answer": "\"anahtar\""
+    },
+    {
+      "id": 5,
+      "question": "JSON.stringify() metodu hangi amaçla kullanılır?",
+      "options": [
+        "JSON'u JavaScript nesnesine dönüştürmek",
+        "Bir JavaScript nesnesini JSON formatına dönüştürmek",
+        "JSON'u bir dosyaya kaydetmek",
+        "JSON dosyasını işlemek",
+        "JSON verilerini silmek"
+      ],
+      "answer": "Bir JavaScript nesnesini JSON formatına dönüştürmek"
+    },
+    {
+      "id": 6,
+      "question": "JSON.parse() metodu ne yapar?",
+      "options": [
+        "JSON'u JavaScript nesnesine çevirir",
+        "Bir diziyi JSON formatına dönüştürür",
+        "JSON dosyasını kaydeder",
+        "JSON dosyasını siler",
+        "Dosya formatını değiştirir"
+      ],
+      "answer": "JSON'u JavaScript nesnesine çevirir"
+    },
+    {
+      "id": 7,
+      "question": "Aşağıdaki JSON ifadesi hangi türde bir değeri temsil eder? {\"puanlar\": [10, 20, 30]}",
+      "options": [
+        "Nesne",
+        "Dizi",
+        "String",
+        "Boolean",
+        "Number"
+      ],
+      "answer": "Nesne"
+    },
+    {
+      "id": 8,
+      "question": "JSON'da değer çiftleri hangi karakter ile ayrılır?",
+      "options": [
+        ", (virgül)",
+        "; (noktalı virgül)",
+        ": (iki nokta üst üste)",
+        ". (nokta)",
+        "/ (eğik çizgi)"
+      ],
+      "answer": ": (iki nokta üst üste)"
+    },
+    {
+      "id": 9,
+      "question": "Bir JSON nesnesindeki tüm anahtarlar hangi türde olmalıdır?",
+      "options": [
+        "String",
+        "Number",
+        "Boolean",
+        "Array",
+        "Object"
+      ],
+      "answer": "String"
+    },
+    {
+      "id": 10,
+      "question": "JSON hangi programlama diline bağımlıdır?",
+      "options": [
+        "JavaScript",
+        "Python",
+        "C++",
+        "Hiçbirine bağımlı değildir",
+        "Java"
+      ],
+      "answer": "Hiçbirine bağımlı değildir"
+    }
+  ]
+}
